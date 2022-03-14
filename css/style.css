@@ -1,0 +1,558 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*======== End CSS Reset Code ========*/
+
+
+
+@font-face {
+  font-family: 'pacifico';
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  src: url("../fonts/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: 'OpenSans-regular';
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url("../fonts/OpenSans-Bold.ttf");
+  }
+
+body{
+	color: #313131;
+}
+
+header{
+	padding-top: 36px;
+}
+
+
+.navbar{
+	border-top: 5px solid #d00b01;
+	padding: 0px 0px 0px 0px;
+	border-bottom: 1px solid #5d5d5d;
+	background-color: #fff;
+}
+
+nav .navbar-brand{
+	font-family: 'pacifico';
+	color: #313131;
+}
+nav .navbar-brand span{
+	color: #d00b01;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	font-family: 'OpenSans-ExtraBold';
+	color: #313131;
+	text-align: right!important;
+	font-size: 14px;
+	padding-left: 13px;
+	padding-right: 13px;
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .active a{
+	color: #d00b01;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #c5c5c5;
+}
+
+.navbar-toggler:focus{
+	box-shadow: 0 0 0 0rem;;
+}
+
+.navbar-light .navbar-toggler{
+	border: 1px solid #c5c5c5;
+	margin: 3px 0;
+}
+
+.logo img{
+	margin: 39px 0;
+}
+
+.social-icon{
+	margin-top: 55px;
+}
+
+.social-icon ul li{
+	display: inline-block;
+	margin: 0px 5px 0px 0px;
+}
+
+.social-icon ul li a{
+	height: 30px;
+	width: 30px;
+	display: block;
+	text-align: center;
+	background-color: #d1d1d1;
+	border-radius: 100%;
+	color: #fff;
+}
+
+.social-icon ul li a i{
+	margin-top: 9px;
+}
+
+
+.social-icon ul li:hover a{
+	background-color: #d00b01;
+}
+
+.plainig{
+	padding: 70px 0 50px;
+	text-align: center;
+}
+
+.plaining-item{
+	margin-bottom: 20px;
+}
+
+.planing-icon{
+	height: 70px;
+	width: 70px;
+	background-color: #d1d1d1;
+	border-radius: 100%;
+	font-size: 38px;
+	padding-top: 18px;
+	margin: 0 auto 18px;
+}
+.planing-icon a{
+	color: #313131;
+}
+.planing-icon:hover{
+	background-color: #d00b01;
+}
+
+.planing-icon:hover a{
+	color: #fff;
+}
+
+.planing-icon p{
+	font-family:'Arial';
+	font-size: 12px;
+}
+
+
+h1.title{
+	font-size: 20px;
+	font-family: 'OpenSans-ExtraBold';
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.welcome{
+	text-align: center;
+	font-family: 'OpenSans-regular' ;
+}
+
+.welcome h3{
+	margin: 40px 0px 0px 0px;
+	font-size: 18px;
+}
+.welcome h2{
+	margin: 0px 0px 40px 0px;
+	font-size: 30px;
+}
+
+.featured{
+	padding-top: 60px;
+	padding-bottom: 70px;
+}
+
+.feature-item{
+	position: relative;
+	margin-bottom: 20px;
+}
+
+
+.feature-item img{
+  display: block;
+  transition: .9s;
+}
+
+.feature-item .caption{
+	transition: .9s;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.feature-item:hover img {
+  opacity: 0.3;
+}
+
+.feature-item:hover .caption {
+  opacity: 1;
+}
+
+.feature-item a i{
+	font-size: 30px;
+	color: #313131;
+}
+
+
+
+.about{
+	font-size: 12px;
+	font-family: 'Arial';
+	line-height: 18px;
+	margin-bottom: 40px;
+}
+.about p{
+	text-align: justify;
+}
+
+.about ul{
+	margin: 5px 0;
+}
+
+.about ul li{
+	color: #9d9d9d;
+}
+.about ul li i{
+	color: #313131;
+	margin-right: 8px;
+}
+a.readmore{
+	font-style: italic;
+	color: #d31b12;
+	text-decoration: none;
+}
+
+a.readmore:hover{
+	color: #313131;
+}
+
+.date{
+	height: 70px;
+	width: 70px;
+	border-radius: 100%;
+	background: #d1d1d1;
+	text-align: center;
+	padding-top: 23px;
+	font-family: 'OpenSans-regular';
+}
+.date p{
+	font-size: 12px;
+}
+.date p span{
+	font-size: 17px;
+}
+.item-title{
+	width: 170px;
+	margin-left: 12px;
+}
+.item a.title{
+	font-family: 'OpenSans-regular';
+	font-size: 17px;
+	color: #d31b12;
+	margin-bottom: 8px;
+	display: block;
+	text-decoration: none;
+}
+
+.auth{
+	color: #9d9d9d;
+	font-style: italic;
+	font-size: 12px;
+	font-family: 'Arial';
+}
+.item p.details{
+	font-size: 12px;
+	font-family: 'Arial';
+	line-height: 18px;
+	color: #313131;
+	text-align: justify;
+	margin: 15px 0;
+}
+
+
+.item img{
+	margin-bottom: 18px;
+}
+
+.blog{
+	margin-bottom: 70px;
+}
+
+.activitis{
+	border-top: 4px solid #313131;
+	padding: 50px 0 60px;
+}
+
+.tweets ul li a{
+	font-family: 'arial';
+	font-size: 12px;
+	color: #1e1e1e;
+	text-decoration: none;
+	line-height: 12px;
+	padding: 18px 0px;
+	display: block;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.tweets ul li:last-child a{
+	border-bottom: none;
+}
+
+.tweets ul li:first-child a{
+	padding-top: 0px;
+}
+
+.tweets ul li a i, .tweets ul li a span{
+	color: #d00b01;
+}
+
+.tweets ul li a i{
+	font-size: 16px;
+	padding: 7px 8px 0px 0px;
+}
+
+.contact-input{
+	width: 100%;
+	padding: 4px;
+	background-color: #d1d1d1;
+	border: none;
+	border-radius: 2px;
+	margin-bottom: 3px;
+	font-style: italic;
+	color: #313131;
+}
+
+.button{
+	padding: 10px;
+	font-size: 11px;
+	font-family:'OpenSans-ExtraBold' ;
+	color: #fff;
+	background-color: #313131;
+	border: none;
+	border-radius: 2px;
+	text-transform: uppercase;
+}
+
+.button:hover{
+	background-color: #d00b01;
+}
+.contacts-form textarea{
+	min-height: 112px;
+}
+
+.testimonials{
+	line-height: 16px;
+}
+
+.testimonials ul li a span{
+	width: 100%;
+	display: block;
+	line-height: 24px;
+}
+
+.flickr ul li{
+	width: 22%;
+	margin: 0px 6px 3px 0;
+}
+.flickr ul li a{
+	display: block;
+}
+
+
+.all_contant{
+	background: #1e1e1e;
+}
+
+.footer-item img{
+	margin-top:38px;
+	margin-bottom: 14px;
+}
+
+.footer-item p{
+	font-family: 'OpenSans-Regular';
+	font-size: 12px;
+	color: #444444;
+	margin-bottom: 38px;
+	
+}
+
+.footer-icon ul li a{
+	color: #393939;
+	background: none;
+}
+.footer-icon ul li:hover a{
+	color: #5b5b5b;
+	background: none;
+}
+.f-input{
+	padding: 6px;
+	background: #393939;
+	border: none;
+	color: #1e1e1e;
+	border-radius: 1px;
+	font-style: italic;
+}
+.footer-manu{
+	margin-top: 35px;
+}
+
+.footer-manu ul li a{
+	text-decoration: none;
+	font-family: 'OpenSans-ExtraBold';
+	font-size: 12px;
+}
+
+.footer-manu ul li{
+	margin-left: 30px;
+}
+
+.lol-3 ul li a{
+	display: inline;
+}
+
+
+
+
+
+
+
+
+/*About -- page-- start*/
+.main-about{
+	height: 55px;
+	background: #d1d1d1;
+}
+.about-bg h1{
+	padding: 19px 0;
+	font-size: 18px;
+  	font-family: 'OpenSans-ExtraBold';
+	
+}
+.about-color{
+	color: #d00b01;
+}
+
+.about-title{
+	color:#313131;
+	font-size: 23px;
+	font-family:'OpenSans-Bold';
+	margin:20px 0;
+
+}
+.conten-item p{
+	color: #313131;
+	margin-top: 10px;
+	font-size: 15px;
+}
+.f-s{
+	font-size: 15px;
+}
+.profile-title{
+	color: #3a3a3a;
+	font-size: 15px;
+}
+.f-border{
+	margin-top: 40px;
+}
+.blog-item a{
+	color: #1e1e1e;
+	text-decoration: none;
+	display: block;
+}
+.blog-item a:hover{
+	color: #d00b01;
+}
+.blog-item a h1{
+	margin: 30px 0px 26px 0;
+}
+
+.bf-w{
+	width: 60%;
+}
+.bl-w{
+	width: 40%;
+	margin-top: 75px;
+}
+
+.blog-link{
+	margin-top: 30px;
+}
+
+
+
+/*About -- page-- end*/
+
+
+
+@media only screen and (max-width: 767px) {
+	.logo img{
+		margin: 39px auto 0;
+		display: block;
+	}
+
+	.social-icon{
+		float: none!important;
+		text-align: center;
+		margin: 20px 0px;
+
+	}
+	.social-icon ul li a i{
+	margin-top: 7px;
+}
+}
